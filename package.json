@@ -7,8 +7,9 @@
   "scripts": {
     "dev": "storybook dev --port 6006",
     "lint": "eslint ./src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-	"lint:fix": "eslint ./src --ext ts,tsx --fix",
+    "lint:fix": "eslint ./src --ext ts,tsx --fix",
     "lint:structure": "eslint --parser ./node_modules/eslint-plugin-project-structure/dist/parser.js --rule project-structure/file-structure:error --ext .js,.jsx,.ts,.tsx,.html,.css,.svg,.png,.jpg,.json,.md .",
+    "test": "npm run test:unit",
     "test:unit": "jest ./src/components/**/*.test.tsx --coverage",
     "storybook": "storybook dev --port 6006",
     "build": "storybook build",
